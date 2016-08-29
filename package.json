@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "iframe-resizer": "^3.5.5",
   },
   "devDependencies": {
+    "iframe-resizer": "^3.5.5",
     "clean-css": "^3.4.19",
     "handlebars": "^4.0.5",
     "del": "^2.2.2",
@@ -18,8 +18,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-frames": "node ./scripts/build-frames v1",
-    "postinstall": "npm run build-frames"
+    "prepublish": "npm run build-frames"
   },
+  "files": [
+    "dist",
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theprate/interactive-frame.git"
