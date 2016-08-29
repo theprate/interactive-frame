@@ -1,0 +1,33 @@
+{
+  "name": "interactive-frame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "iframe-resizer": "^3.5.5",
+  },
+  "devDependencies": {
+    "clean-css": "^3.4.19",
+    "handlebars": "^4.0.5",
+    "del": "^2.2.2",
+    "rollup-plugin-commonjs": "^3.3.1",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup": "^0.34.10",
+    "rollup-plugin-uglify": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-frames": "node ./scripts/build-frames v1",
+    "postinstall": "npm run build-frames"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theprate/interactive-frame.git"
+  },
+  "author": "James Canning <james@jamescanning.com> (http://brudil.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theprate/interactive-frame/issues"
+  },
+  "homepage": "https://github.com/theprate/interactive-frame#readme"
+}
